@@ -9,7 +9,7 @@ def hello():
     return "2018113534 전자공학부 정영훈"
 
 @app.route("/me/")
-def mee():
+def aboutme():
     menu = ["chicken.jpg", "dog.jpg", "knu.jpg"]
     pickme = random.choice(menu)
     return render_template('index.html', img=pickme)
